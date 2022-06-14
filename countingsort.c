@@ -15,3 +15,17 @@ void print_array (int *array, int lenght)
     }
     printf("\n");
 }
+
+/*
+ *  Occurrences function
+ *  Find the total frequency/occurrences of each element and 
+    store the count at ith index in count array. 
+*/
+void occurences (int *array, int *o_array)
+{
+    int i;
+    for (i = 0; i < LENGHT; i++)
+    {
+        o_array[array[i]-1]++;
+    }
+}
