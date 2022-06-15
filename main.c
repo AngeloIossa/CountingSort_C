@@ -12,6 +12,9 @@ int main(int argc, char const *argv[])
     occurences(array, o_array);
     print_array(o_array, k);
 
+    cumulative_occurences(o_array, k);
+    print_array(o_array, k);
+   
 
     
     return 0;

@@ -19,7 +19,7 @@ void print_array (int *array, int lenght)
 /*
  *  Occurrences function
  *  Find the total frequency/occurrences of each element and 
-    store the count at ith index in count array. 
+ *  store the count at ith index in count array. 
 */
 void occurences (int *array, int *o_array)
 {
@@ -28,4 +28,18 @@ void occurences (int *array, int *o_array)
     {
         o_array[array[i]-1]++;
     }
+}
+
+/*
+ *  cumulative_occurrences function
+ *  find the cumulative sum by adding current(i) and prev(i-1) count and store 
+ *	it in count arr itself
+*/
+void cumulative_occurences (int *o_array, int o_lenght)
+{
+    int i;
+    for (i = 0; i < o_lenght; i++)
+    {
+        o_array[i] = o_array[i] + o_array[i-1];
+    }    
 }
