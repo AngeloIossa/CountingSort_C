@@ -43,3 +43,16 @@ void cumulative_occurences (int *o_array, int o_lenght)
         o_array[i] = o_array[i] + o_array[i-1];
     }    
 }
+
+/*
+ *  quicksort function
+*/
+void quicksort (int *array, int *o_array, int *sort_array)
+{
+    int i;
+    for (i = (LENGHT-1); i >= 0; i--)
+    {
+        sort_array[o_array[array[i]-1]-1] = array[i];
+        o_array[array[i]-1]--;
+    }
+}
